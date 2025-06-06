@@ -1,28 +1,70 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f9fa;
   margin: 0;
-  padding: 20px;
+  padding: 0;
 }
+
 h1 {
   text-align: center;
+  margin: 32px 0 24px 0;
+  color: #222;
+  letter-spacing: 1px;
 }
+
+#ranking {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 table {
-  margin: 0 auto;
+  width: 95%;
+  max-width: 600px;
   border-collapse: collapse;
-  width: 80%;
   background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  overflow: hidden;
 }
+
 th, td {
-  padding: 12px 16px;
-  border-bottom: 1px solid #ddd;
+  padding: 16px 12px;
   text-align: center;
 }
+
 th {
   background: #007bff;
   color: #fff;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
 }
+
 tr:nth-child(even) {
-  background: #f9f9f9;
+  background: #f2f6fa;
+}
+
+tr:nth-child(2) td {
+  background: #ffe082;
+  font-weight: bold;
+}
+
+tr:nth-child(3) td {
+  background: #b2dfdb;
+  font-weight: bold;
+}
+
+tr:nth-child(4) td {
+  background: #ffcdd2;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  table, th, td {
+    font-size: 0.95em;
+    padding: 10px 4px;
+  }
+  table {
+    width: 100%;
+  }
 }
