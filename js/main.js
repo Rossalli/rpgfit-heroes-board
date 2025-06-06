@@ -36,7 +36,7 @@ function fetchAndRender() {
       const data = csvToArray(csv);
       const filtrado = filtrarColunas(data, CAMPOS_DESEJADOS);
       // Ordena pelo campo "Pontuação" (ajuste o índice conforme necessário)
-      const idxPontuacao = filtrado[0].indexOf("Pontuação");
+      const idxPontuacao = filtrado[0].indexOf("XP TOTAL");
       filtrado.sort((a, b) => b[idxPontuacao] - a[idxPontuacao]);
       renderTable(filtrado);
     });
