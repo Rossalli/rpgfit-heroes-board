@@ -40,23 +40,12 @@ th {
   letter-spacing: 0.5px;
 }
 
-tr:nth-child(even) {
-  background: #f2f6fa;
+/* Linhas alternadas */
+tbody tr:nth-child(even) {
+  background: #fffde7; /* Amarelo claro */
 }
-
-tr:nth-child(2) td {
-  background: #ffe082;
-  font-weight: bold;
-}
-
-tr:nth-child(3) td {
-  background: #b2dfdb;
-  font-weight: bold;
-}
-
-tr:nth-child(4) td {
-  background: #ffcdd2;
-  font-weight: bold;
+tbody tr:nth-child(odd) {
+  background: #fff; /* Branco */
 }
 
 @media (max-width: 700px) {
