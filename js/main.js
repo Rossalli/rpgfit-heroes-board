@@ -1,4 +1,4 @@
-const SHEET_URL = 'https://docs.google.com/spreadsheets/d/1Q5S1EQ4jyVTi0x-M7Phn86OUemtDm6DuW3En1wC72UY/edit?usp=drivesdk?output=csv';
+const SHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vStASxUcg86G4Tb9QeQ6JO8p9YalUY5qzxZ1ROH8U6lsRLnXssTBd7aAs3CuTEPbCYs1rVcyXU1hI0j/pub?gid=0&single=true&output=csv';
 
 function csvToArray(str, delimiter = ",") {
   const rows = str.trim().split("\n");
